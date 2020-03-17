@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome  -->
+    <script src="https://kit.fontawesome.com/cbcb8f4c06.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Create And Delete</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 py-5 ">
+                <input id="nameField" class="form-control " value="" type="text" placeholder="Enter Your Name">
+                <ul class="list-group my-5" id="nameList"></ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        let nameField =  document.querySelector("#nameField");
+        let nameList = document.querySelector("#nameList")
+        nameField.addEventListener("keypress", function(event){
+            if(event.keyCode == 13){
+                let name =  event.target.value;
+            if(!name){
+                alert("Enter Name")
+            }else{
+                nameList.appendChild(createLi(name))
+                event.target.value = "" 
+            }
+
+                
+            }
+        })
+
+        function createLi(name){
+            let li = document.createElement("li");
+            li.className = "list-group-item  py-2"
+            li.innerText = name;
+            
+            let span = document.createElement("span");
+            span.innerHTML = '<i class="fas fa-times"></i>'
+            span.className= " float-right text-warning";
+            span.addEventListener('click', function(){
+                li.remove();
+            })
+            li.appendChild(span)
+            return li;
+        }
+
+
+    </script>
+</body>
+
+</html>
