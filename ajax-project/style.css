@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.form-control{
+    background: #202124;
+    color:white;
+    border:none;
+}
+.jumbotron{
+    background:#202124 !important;
+}
+.display-5 {
+    font-weight: 400;
+    font-size: 38px;
+}
+input[type=text]{
+    font-size: 2em;
+}
+input::placeholder {
+    font-size: 1em;
+}
+textarea{
+   overflow: hidden;
+   display: block;
+}
+.form-control:focus{
+    background: #202124;
+    color:white;
+    border: none;
+    box-shadow: none;
+}
+i{
+    color:#6a6f73;
+    font-size: 18px;
+    font-weight: 400;
+    padding:8px;
+    border: 2px solid #6a6f73;
+    border-radius: 30px;
+}

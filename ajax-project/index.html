@@ -5,16 +5,56 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/cbcb8f4c06.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+        <title>Ajax Project</title>
 
-    <title>Hello, world!</title>
 </head>
 
 <body>
-    
+    <h1 class="text-center my-5">Welcome to Daily Note Project</h1>
+    <div class="container ">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron bg-dark">
+                    <input id="title" class="form-control" type="text" placeholder="Title">
+                    <textarea id="textarea" class="form-control"  id=""  placeholder="take a note ..."></textarea>
+                    <button class="btn btn-danger">add</button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="row">
+            <div class="col">
+                <div class="items"></div>
+            </div>
+        </div>
+       
+        <div class="row ">
+            <div class="col">
+                <div class="jumbotron text-white ">
+                    <h1 class=" display-5">Sujon Hossain</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia asperiores mollitia in accusantium tempora eum ea facere reiciendis iure quae tenetur ab odio, qui, dicta voluptatibus id pariatur, facilis deleniti.</p>
+                    <div class="d-flex justify-content-between">
+                        <div height="10px">
+                            <span><i class="far fa-edit"></i></span>
+                            <span><i class="far fa-trash-alt"></i></span>
+                            <span><i class="fas fa-border-all"></i></span>
+                        </div>
+                        <div >
+                            <button>Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="app.js"></script>
 </body>
 
 </html>
