@@ -39,3 +39,17 @@ textarea {
     border: none;
     box-shadow: none;
 }
+.task-control-panel{
+    width: 100%;
+    min-height: 50px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+/* .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+} */
