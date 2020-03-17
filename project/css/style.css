@@ -1,0 +1,41 @@
+.form-control {
+    background: #202124;
+    color: white;
+    border: none;
+}
+
+.jumbotron {
+    background: #202124 !important;
+}
+input[type='text']{
+    font-size: 1em;
+}
+.display-5 {
+    font-weight: 400;
+    font-size: 38px;
+}
+
+
+::placeholder {
+    font-size: 1em;
+}
+
+.btn {
+    color: #BDBDBD;
+    border: 2px solid #646568;
+    margin-top: 12px;
+}
+.btn:hover{
+    color: silver;
+}
+textarea {
+    overflow: hidden;
+    display: block;
+}
+
+.form-control:focus {
+    background: #202124;
+    color: white;
+    border: none;
+    box-shadow: none;
+}
